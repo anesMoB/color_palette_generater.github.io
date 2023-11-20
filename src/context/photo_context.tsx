@@ -1,6 +1,5 @@
 'use client';
 import React, {ChangeEvent, createContext,useState,useEffect } from "react";
-import ColorThief from 'colorthief';
 import { usePalette } from 'color-thief-react'
 
 
