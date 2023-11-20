@@ -6,6 +6,8 @@ import Image from "next/image";
 import rgbHex from "rgb-hex";
 import ColorBox from "../componants/colorBox";
 
+
+
 const Hero = () => {
     const toHex = (value: number): string => {
         const hex = value.toString(16);
@@ -22,7 +24,7 @@ const Hero = () => {
         return hex;
       };*/
 
- const {image,colorPalette} =useContext(ImageContext)
+ const {image,colorPalette} = useContext<any>(ImageContext)
   return (
     <div className="relative flex flex-col lg:flex-row justify-around items-center gap-8 px-4 py-2 lg:px-20 lg:py-10 min-h-[85vh]">
         {image==undefined ? 
