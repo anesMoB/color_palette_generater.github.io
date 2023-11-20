@@ -7,7 +7,7 @@ import { FaImages } from "react-icons/fa";
 
 const Navbar = () => {
 
-    const {setImage} =useContext(ImageContext)
+    const {setImage} =useContext<any>(ImageContext)
 
     
     const onChangeHanlder=(e: ChangeEvent<HTMLInputElement>)=>{
