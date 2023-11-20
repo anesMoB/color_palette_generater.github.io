@@ -13,7 +13,7 @@ export function ImageProvider ({
     const [image, setImage] = useState<string | null>();
     const [colorPalette, setColorPalette] = useState<string[] | null>();
     const { data, loading, error } = usePalette(image as string, 5, "hex")
-    const imagePickerOnChangeHandler=(e: ChangeEvent<HTMLInputElement>)=>{
+    const imagePickerOnChangeHandler=(e: any)=>{
       const file = e.target.files?.[0];
 
       if (file) {
