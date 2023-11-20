@@ -3,7 +3,7 @@ import React, {ChangeEvent, createContext,useState } from "react";
 import ColorThief from 'colorthief';
 
 
-export const ImageContext=React.createContext();
+export const ImageContext=React.createContext(null);
 
 export function ImageProvider ({
     children,
