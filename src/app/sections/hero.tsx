@@ -40,13 +40,13 @@ const Hero = () => {
             
             <div className="flex justify-center items-center flex-wrap max-md:pb-10 gap-8 lg:w-[50%]">
             { colorPalette && (
-                colorPalette.map((color:number[], index:number) => {
-                    let colorHex ='#';
+                colorPalette.map((color:string, index:number) => {
+                   /*  let colorHex ='#';
                     color.map((colorRGB)=>{
                         colorHex +=toHex(colorRGB)
-                    })
+                    }) */
                     return <div key={index} >
-                        <ColorBox color={colorHex}/>
+                        <ColorBox color={color}/>
                     </div>
                 })
             ) }
