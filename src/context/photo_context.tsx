@@ -27,7 +27,7 @@ export function ImageProvider ({
   }: ImageProviderProps){
     const [image, setImage] = useState<string | null>(null);
     const [colorPalette, setColorPalette] = useState<string[] | null>(null);
-    const { data, loading, error } = usePalette(image as string, 5, "hex")
+    const { data, loading, error } = usePalette(image as string, 6, "hex")
     const imagePickerOnChangeHandler=(e: ChangeEvent<HTMLInputElement>)=>{
       const file = e.target.files?.[0];
 
